@@ -23,7 +23,7 @@ const isAuth = (req, res, next) => {
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.post('/login', (req, res) => {
+app.post('/api/login', (req, res) => {
   const { username, password } = req.body;
   if (username === 'admin' && password === 'admin') {
     req.session.user = username;
