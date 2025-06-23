@@ -1,0 +1,16 @@
+{
+  "name": "iphone-store",
+  "version": "1.0.0",
+  "description": "Profesional iPhone Store with Supabase and Node.js admin system",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.50.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3"
+  }
+}

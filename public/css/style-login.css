@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  height: 100vh;
+  background: linear-gradient(135deg, #1e1e1e 0%, #434343 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-wrapper {
+  width: 100%;
+  max-width: 360px;
+  padding: 1rem;
+}
+
+.login-card {
+  width: 100%;
+  background: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.login-card .logo {
+  width: 48px;
+  margin-bottom: 1rem;
+}
+
+.login-card h2 {
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  color: #333333;
+}
+
+.login-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.login-card form input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 0.75rem;
+  font-size: 1rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.login-card form input:focus {
+  outline: none;
+  border-color: #0071e3;
+  box-shadow: 0 0 0 0.2rem rgba(0, 113, 227, 0.25);
+}
+
+.login-card form button {
+  width: 100%;
+  padding: 0.75rem;
+  background: #0071e3;
+  color: #fff;
+  border: none;
+  border-radius: 0.75rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.login-card form button:hover {
+  background: #005bb5;
+  transform: translateY(-2px);
+}
+
+#errorMessage {
+  margin-top: 1rem;
+  color: #e53e3e;
+  font-size: 0.9rem;
+  font-weight: 500;
+}

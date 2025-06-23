@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Admin Login · iPhone Store</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="css/style-login.css" />
+</head>
+<body>
+  <div class="login-wrapper">
+    <div class="login-card">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg"
+        alt="Apple Logo"
+        class="logo"
+      />
+      <h2>iPhone Store</h2>
+      <form action="/login" method="post" novalidate>
+        <input
+          type="text"
+          name="username"
+          placeholder="Usuario"
+          required
+        />
+        <input
+          type="password"
+          name="password"
+          placeholder="Contraseña"
+          required
+        />
+        <button type="submit">Entrar</button>
+        <p id="errorMessage"></p>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    if (location.search.includes("error")) {
+      document.getElementById("errorMessage").textContent =
+        "Credenciales inválidas";
+    }
+  </script>
+</body>
+</html>
